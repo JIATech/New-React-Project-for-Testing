@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,900&family=Metamorphous&family=Mooli&family=Nosifer&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&family=Water+Brush&display=swap"); /* font-family: 'Caveat', cursive; */
+/* font-family: 'Dosis', sans-serif; */
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Mooli', sans-serif; */
+/* font-family: 'Nosifer', sans-serif; */
+/* font-family: 'Outfit', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Sacramento', cursive; */
+/* font-family: 'Water Brush', cursive; */
+/* font-family: 'Metamorphous', serif; */
+
+.app__aboutus {
+  position: relative;
+}
+.app__aboutus-overlay {
+  position: absolute;
+  inset: 0;
+}
+.app__aboutus-overlay img {
+  width: 491px;
+  height: 415px;
+  z-index: 0;
+}
+.app__aboutus-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  z-index: 2;
+}
+.app__aboutus-content_about {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+.app__aboutus-content_knife {
+  margin: 2rem 4rem;
+}
+.knife {
+  height: 910px;
+}
+.app__aboutus-content_history {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+.app__aboutus-content_history p,
+.app__aboutus-content_about p {
+  margin: 2rem 0;
+  color: var(--color-golden);
+  max-width: 450px;
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  font-family: "Metamorphous", serif;
+  min-height: 300px;
+}
+.about-know {
+  background-color: black;
+  padding: 10px;
+  color: white;
+}
+.about-know {
+  background-color: #13322b;
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 28px;
+  font-size: 16px;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: 0.1px solid white;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.about-know:hover {
+  background: transparent;
+  color: #13322b;
+  border: 1px solid var(--color-golden);
+}
+
+@media screen and (min-width: 2000px) {
+  .app__aboutus-content_knife img {
+  }
+}
+@media screen and (max-width: 900px) {
+  .app__aboutus-content {
+    flex-direction: column;
+  }
+  .app__aboutus-content_knife {
+    margin: 4rem 0;
+  }
+}
+@media screen and (max-width: 650px) {
+  .app__aboutus-overlay img {
+    width: 80%;
+    height: 320px;
+  }
+}
